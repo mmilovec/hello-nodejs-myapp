@@ -9,10 +9,12 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+// I add this so we know on which port the app is listening and what is sending to the console
 app.get('/', function (req, res) {
   res.send('Hello, World!\n');
 });
 
+// listening port
 app.listen(8080, function () {
 console.log('Example app listening on port 8080!');
 });
